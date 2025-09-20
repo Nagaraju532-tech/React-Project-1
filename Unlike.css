@@ -1,0 +1,53 @@
+.unlike-button {
+  display: flex;
+  align-items: center;
+  background: #95f6e8d2;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 30px;
+  justify-content: right;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: scale(1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.unlike-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.unlike-icon {
+  font-size: 24px;
+  color: #7f7fff;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.unlike-text {
+  font-weight: bold;
+  color: #555;
+}
+
+.unlike-count {
+  margin-left: 15px;
+  background: #7f7fff;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.unlike-button.unliked {
+  background: #ececff;
+  transform: scale(1.05);
+}
+
+.unlike-button.unliked .unlike-icon {
+  color: #5252ff;
+}
+
+.unlike-button.unliked .unlike-count {
+  background: #5252ff;
+}
